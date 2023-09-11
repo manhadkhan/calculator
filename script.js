@@ -1,6 +1,5 @@
 /*Functions for basic operations like 
 addition, substraction, multiplication, and division*/
-
 function add(a, b) {
     return a + b;
 }
@@ -22,8 +21,7 @@ function divide(a, b) {
     }
 }
 
-//A function to call one of the above function for operation
-
+// A function to call one of the above function for operation
 function operate(operator, num1, num2) {
     if(operator === '+') {
         return add(num1, num2);
@@ -41,3 +39,15 @@ function operate(operator, num1, num2) {
         return "Invalid operator";
     }
 }
+
+// get the buttons
+const buttons = document.querySelectorAll('.btn-number, .btn-operator')
+const display = document.querySelector('.display')
+
+// adding a pop-up message when a button is clicked
+buttons.forEach(button => {
+  button.addEventListener('click', () => { 
+      // logic that run when the button is "clicked"
+      alert("button was clicked!")
+  })
+})
