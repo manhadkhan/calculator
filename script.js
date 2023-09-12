@@ -48,6 +48,7 @@ const display = document.querySelector('.display')
 buttons.forEach(button => {
   button.addEventListener('click', () => { 
       // logic that run when the button is "clicked"
-      alert("button was clicked!")
+      const buttonValue = button.getAttribute('data-num');
+      alert(buttonValue + " was clicked")
   })
 })
