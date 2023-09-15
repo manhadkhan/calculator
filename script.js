@@ -44,11 +44,16 @@ function operate(operator, num1, num2) {
 const buttons = document.querySelectorAll('.btn-number, .btn-operator')
 const display = document.querySelector('.display')
 
+let displayData = "";
+
 // adding a pop-up message when a button is clicked
 buttons.forEach(button => {
   button.addEventListener('click', () => { 
       // logic that run when the button is "clicked"
       const buttonValue = button.getAttribute('data-num');
-      alert(buttonValue + " was clicked")
-  })
+
+      //update the display with the value of the button clicked
+      displayData += buttonValue;
+      display.textContent = displayData;
+    })
 })
