@@ -21,7 +21,7 @@ function divide(a, b) {
     }
 }
 
-// A function to call one of the above function for operation
+//A function to call one of the above function for operation
 function operate(operator, num1, num2) {
     if(operator === '+') {
         return add(num1, num2);
@@ -40,9 +40,11 @@ function operate(operator, num1, num2) {
     }
 }
 
-// get the buttons
+//Get the buttons
 const buttons = document.querySelectorAll('.btn-number, .btn-operator')
 const display = document.querySelector('.display')
+const equalsButton = document.querySelector('.btn-equals');
+const clearButton = document.querySelector('.btn-clear');
 
 let displayData = "";
 
@@ -56,4 +58,10 @@ buttons.forEach(button => {
       displayData += buttonValue;
       display.textContent = displayData;
     })
+})
+
+//clear the display
+clearButton.addEventListener('click', () => {
+    displayData = ""; //when the clear button is clicked, display data value will be set to an empty string.
+    display.textContent = displayData; //assigning displayData value to display
 })
