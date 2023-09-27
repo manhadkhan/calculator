@@ -14,7 +14,7 @@ function multiply(a, b) {
 
 function divide(a, b) {
     if(b == 0) {
-        return "∞";
+        return "Oops! division by 0 is not possible";
     }
     else {
         return a / b;
