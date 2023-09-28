@@ -73,6 +73,17 @@ button {
   border-radius: 0 0 25px 0; /* Border radius for the Divide button (bottom right corner) */
 }
 
+/* Heading styles */
+h1 {
+  text-align: center;
+  background-color: #333; /* Background color of the heading */
+  color: #fff; /* Text color of the heading */
+  padding: 10px 0; /* Add padding to the heading for spacing */
+  border-top-left-radius: 25px; /* Rounded top-left corner for the heading */
+  border-top-right-radius: 25px; /* Rounded top-right corner for the heading */
+  font-size: 36px; /* Font size */
+}
+
 /* Button hover effect */
 button:hover {
     background-color: #ddd; /* Background color on hover */
